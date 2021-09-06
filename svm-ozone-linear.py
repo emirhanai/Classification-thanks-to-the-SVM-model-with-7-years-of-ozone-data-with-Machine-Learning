@@ -44,7 +44,14 @@ model_ozone.fit(X_train, y_train)
 y_test_pred = model_ozone.predict(X_test)
 #print(X_test)
 #print(y_test)
-#Accuracy
+
+y_train_pred = model_ozone.predict(X_train)
+
+from sklearn.metrics import confusion_matrix
+c_matrix = confusion_matrix(y_train, y_train_pred)
+print(c_matrix)
+#[[1669    7]
+# [ 115   13]]
 
 #C = 1.0
 
@@ -56,6 +63,8 @@ y_test_pred = model_ozone.predict(X_test)
 
 
 #print(y_pred)
+
+
 print("Accuracy:",metrics.accuracy_score(y_test,y_test_pred))
 #Accuracy: 0.9561643835616438
 

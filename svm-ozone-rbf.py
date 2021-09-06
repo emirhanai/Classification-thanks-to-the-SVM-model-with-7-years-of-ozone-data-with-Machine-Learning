@@ -12,10 +12,10 @@ df = pd.read_csv('ozone-data.csv')
 
 #data select
 X = df.iloc[:,1:73]
-print(X)
+#print(X)
 #target select [class]
 y = df.iloc[:,73:74]
-print(y)
+#print(y)
 #target type of Dataframe to type of Numpy Array
 yyy = np.array(y).ravel()
 
@@ -38,10 +38,17 @@ model.fit(model_ozone_2d, y_train)
 
 #prediction equation is the model.
 y_test_pred = model.predict(X_test)
+y_train_pred = model.predict(X_train)
 
 #accuracy is model
 print("Accuracy:",metrics.accuracy_score(y_test,y_test_pred))
 #Accuracy: 0.9602739726027397
+
+from sklearn.metrics import confusion_matrix
+c_matrix = confusion_matrix(y_train, y_train_pred)
+print(c_matrix)
+#[[1676    0]
+# [ 128    0]]
 
 #data visualition
 import pylab as pl
