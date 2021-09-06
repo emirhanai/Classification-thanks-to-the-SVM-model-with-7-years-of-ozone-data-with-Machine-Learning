@@ -40,3 +40,7 @@ Official Website: **[https://www.emirhanbulut.com.tr][OfficialWebSite]**
 [OfficialWebSite]: https://www.emirhanbulut.com.tr
 
 [DataSource]: https://archive.ics.uci.edu/ml/index.php
+
+<img src="https://raw.githubusercontent.com/emirhanai/Classification-thanks-to-the-SVM-model-with-7-years-of-ozone-data-with-Machine-Learning/main/ozone-normal-day-classification-WSR0-WSR1.png" alt="ozone-normal-day-classification-WSR0-WSR1">
+<img src="https://github.com/emirhanai/Classification-thanks-to-the-SVM-model-with-7-years-of-ozone-data-with-Machine-Learning/blob/main/ozone-normal-day-classification-2.png?raw=trueg" alt="ozone-normal-day-classification-2">
+<img src="https://github.com/emirhanai/Classification-thanks-to-the-SVM-model-with-7-years-of-ozone-data-with-Machine-Learning/blob/main/ozone-normal-day-classification-1.png?raw=true" alt="ozone-normal-day-classification-1">
