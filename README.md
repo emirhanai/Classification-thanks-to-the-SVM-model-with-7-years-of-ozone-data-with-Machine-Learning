@@ -5,7 +5,7 @@ _Example:_ `model_ozone = PCA(n_components=72).fit(X_train)`
  
 `model = svm.SVC(kernel='rbf', gamma=0.05, C=3)`
 
-`model_ozone = svm.SVC(kernel='linear', C=3)
+`model_ozone = svm.SVC(kernel='linear', C=3)`
 
 **I am happy to present this software to you!**
 
