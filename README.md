@@ -11,6 +11,12 @@ _Example:_ `model_ozone = PCA(n_components=72).fit(X_train)`
 
 #`Accuracy: 0.9602739726027397`
 
+#Linear Confusion Matrix #[[1669    7]
+                         # [ 115   13]]
+#Gauss RBF Confusion Matrix #[[1676    0]
+                            # [ 128    0]]
+
+
 Data Source: [DataSource]
 ###**The coding language used:**
 
