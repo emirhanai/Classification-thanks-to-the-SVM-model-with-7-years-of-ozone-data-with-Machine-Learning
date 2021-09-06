@@ -9,11 +9,20 @@ _Example:_ `model_ozone = PCA(n_components=72).fit(X_train)`
 
 **I am happy to present this software to you!**
 
-`#Accuracy: 0.9602739726027397`
+`#Accuracy: 0.9602739726027397` Linear Model
 
-`#Auc Roc Curve Score:  0.5617836676217765`
+`#Auc Roc Curve Score:  0.5617836676217765` Linear Model
 
-`#Auc Roc Curve Score:  0.5`
+`#Auc Roc Curve Score:  0.5` RBF Model
+
+`#Precision Score:  88.06896551724138` Linear Model
+`#Recall Score:  56.178366762177646` Linear Model
+`#F1 Score:  59.79183681221629` Linear Model
+
+`#Precision Score:  47.80821917808219` RBF Model
+`#Recall Score:  50.0` RBF Model
+`#F1 Score:  48.87955182072829` RBF Model
+
 
 #Linear Confusion Matrix #[[1669    7]
                           [ 115   13]]
