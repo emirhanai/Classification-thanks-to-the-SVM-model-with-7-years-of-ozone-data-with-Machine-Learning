@@ -9,6 +9,8 @@ _Example:_ `model_ozone = PCA(n_components=72).fit(X_train)`
 
 **I am happy to present this software to you!**
 
+#`Accuracy: 0.9602739726027397`
+
 Data Source: [DataSource]
 ###**The coding language used:**
 
