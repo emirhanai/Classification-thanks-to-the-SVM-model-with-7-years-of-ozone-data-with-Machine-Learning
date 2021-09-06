@@ -57,6 +57,14 @@ print(c_matrix)
 
 #h = .02
 
+from sklearn.metrics import auc
+
+fpr, tpr, _ = metrics.roc_curve(y_test, y_test_pred)
+
+auc_test_roc_curve= auc(fpr,tpr)
+print("Auc Roc Curve Score: ",auc_test_roc_curve)
+#Auc Roc Curve Score:  0.5617836676217765
+
 #rbf_svc = svm.SVC(kernel='rbf', gamma=0.7, C=C).fit(X_train, y_train)
 #poly_svc = svm.SVC(kernel='poly', degree=3, C=C).fit(X_train, y_train)
 #lin_svc = svm.LinearSVC(C=C).fit(X_train, y_train)

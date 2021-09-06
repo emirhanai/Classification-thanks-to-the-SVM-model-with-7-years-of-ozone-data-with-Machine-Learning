@@ -50,6 +50,14 @@ print(c_matrix)
 #[[1676    0]
 # [ 128    0]]
 
+from sklearn.metrics import auc
+
+fpr, tpr, _ = metrics.roc_curve(y_train, y_train_pred)
+
+auc_test_roc_curve= auc(fpr,tpr)
+print("Auc Roc Curve Score: ",auc_test_roc_curve)
+#Auc Roc Curve Score:  0.5
+
 #data visualition
 import pylab as pl
 for i in range(0, model_ozone_2d.shape[0]):
