@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 from sklearn import metrics
 import pandas as pd
+from sklearn.metrics import recall_score, f1_score, precision_score
 #from sklearn.preprocessing import LabelEncoder
 
 df = pd.read_csv('ozone-data.csv')
@@ -64,6 +65,15 @@ fpr, tpr, _ = metrics.roc_curve(y_test, y_test_pred)
 auc_test_roc_curve= auc(fpr,tpr)
 print("Auc Roc Curve Score: ",auc_test_roc_curve)
 #Auc Roc Curve Score:  0.5617836676217765
+
+
+print("Precision Score: ", precision_score(y_test, y_test_pred, average="macro").mean()*100)
+print("Recall Score: ", recall_score(y_test, y_test_pred, average="macro").mean()*100)
+print("F1 Score: ",f1_score(y_test, y_test_pred, average="macro").mean()*100)
+
+#Precision Score:  88.06896551724138
+#Recall Score:  56.178366762177646
+#F1 Score:  59.79183681221629
 
 #rbf_svc = svm.SVC(kernel='rbf', gamma=0.7, C=C).fit(X_train, y_train)
 #poly_svc = svm.SVC(kernel='poly', degree=3, C=C).fit(X_train, y_train)

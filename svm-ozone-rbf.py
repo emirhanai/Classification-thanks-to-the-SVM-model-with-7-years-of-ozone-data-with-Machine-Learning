@@ -4,6 +4,8 @@ from sklearn.model_selection import train_test_split
 import numpy as np
 from sklearn import metrics
 import pandas as pd
+from sklearn.metrics import f1_score, precision_score, recall_score, classification_report, confusion_matrix
+
 #from sklearn.preprocessing import LabelEncoder
 
 #read data
@@ -54,9 +56,19 @@ from sklearn.metrics import auc
 
 fpr, tpr, _ = metrics.roc_curve(y_train, y_train_pred)
 
-auc_test_roc_curve= auc(fpr,tpr)
+auc_test_roc_curve= (fpr,tpr)
 print("Auc Roc Curve Score: ",auc_test_roc_curve)
 #Auc Roc Curve Score:  0.5
+
+
+print("Precision Score: ", precision_score(y_test, y_test_pred, average="macro").mean()*100)
+print("Recall Score: ", recall_score(y_test, y_test_pred, average="macro").mean()*100)
+print("F1 Score: ",f1_score(y_test, y_test_pred, average="macro").mean()*100)
+
+#Precision Score:  47.80821917808219
+#Recall Score:  50.0
+#F1 Score:  48.87955182072829
+
 
 #data visualition
 import pylab as pl
